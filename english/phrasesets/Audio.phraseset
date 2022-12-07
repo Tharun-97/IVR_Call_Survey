@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="Audio" version="1.0">
+    <phrase version="1.0">
+        <displayname>welcome</displayname>
+        <talent/>
+        <phrasetext>Welcome to Booking.com&#13;
+</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>welcome.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>lang</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>language.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>bookingId</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>bookingid.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>noinput</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>noinput.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>noMatch</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>nomatch.wav</audiofile>
+    </phrase>
+</phraseset>
