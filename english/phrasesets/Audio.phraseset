@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <phraseset audiolocation="internal" filename="Audio" version="1.0">
     <phrase version="1.0">
-        <displayname>welcome</displayname>
-        <talent/>
-        <phrasetext>Welcome to Booking.com&#13;
-</phrasetext>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>welcome.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>lang</displayname>
         <talent/>
         <phrasetext/>
@@ -45,5 +35,50 @@
         <searchkeywords/>
         <comments/>
         <audiofile>nomatch.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>question1</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Question1.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>question2</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Question2.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>question3</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Question3.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>question4</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Question4.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>welcome</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>welcome.wav</audiofile>
     </phrase>
 </phraseset>

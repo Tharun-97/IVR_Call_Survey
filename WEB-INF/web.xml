@@ -71,6 +71,7 @@ Copyright 2004-2021 Avaya Inc.
         <param-value>none</param-value>
         <description>Grammar caching mode, none=no caching, default=system default or property setting</description>
     </context-param>
+    
     <servlet id="avayadefaultdisconnecthandler-servlet">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
@@ -159,25 +160,53 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_196">
-        <servlet-name>Rating</servlet-name>
-        <servlet-class>flow.Rating</servlet-class>
+    
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_212">
+        <servlet-name>Questions</servlet-name>
+        <servlet-class>flow.Questions</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_172">
-        <servlet-name>Question1</servlet-name>
-        <servlet-class>flow.Question1</servlet-class>
+    <servlet id="SAGE-callflow-servlet_Questions_1">
+        <servlet-name>Questions-Begin</servlet-name>
+        <servlet-class>flow.subflow.Questions.Begin</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_178">
-        <servlet-name>Question2</servlet-name>
-        <servlet-class>flow.Question2</servlet-class>
+    <servlet id="SAGE-callflow-servlet_Questions_4">
+        <servlet-name>Questions-question1</servlet-name>
+        <servlet-class>flow.subflow.Questions.question1</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_184">
-        <servlet-name>Question3</servlet-name>
-        <servlet-class>flow.Question3</servlet-class>
+    <servlet id="SAGE-callflow-servlet_Questions_6">
+        <servlet-name>Questions-question2</servlet-name>
+        <servlet-class>flow.subflow.Questions.question2</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_190">
-        <servlet-name>validationCopy</servlet-name>
-        <servlet-class>flow.validationCopy</servlet-class>
+    <servlet id="SAGE-callflow-servlet_Questions_8">
+        <servlet-name>Questions-question3</servlet-name>
+        <servlet-class>flow.subflow.Questions.question3</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_Questions_10">
+        <servlet-name>Questions-question4</servlet-name>
+        <servlet-class>flow.subflow.Questions.question4</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_Questions_52">
+        <servlet-name>Questions-exit</servlet-name>
+        <servlet-class>flow.subflow.Questions.exit</servlet-class>
+    </servlet>
+    <servlet id="AdminVariableInfo-servlet">
+        <servlet-name>AdminVariableInfo</servlet-name>
+        <servlet-class>com.avaya.vp.admin.variables.runtime.AdminVariableInfo</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_Questions_92">
+        <servlet-name>Questions-Review</servlet-name>
+        <servlet-class>flow.subflow.Questions.Review</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_Questions_104">
+        <servlet-name>Questions-Rating</servlet-name>
+        <servlet-class>flow.subflow.Questions.Rating</servlet-class>
     </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
@@ -262,25 +291,51 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_196">
-        <servlet-name>Rating</servlet-name>
-        <url-pattern>/Rating</url-pattern>
+    
+    
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_212">
+        <servlet-name>Questions</servlet-name>
+        <url-pattern>/Questions</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_172">
-        <servlet-name>Question1</servlet-name>
-        <url-pattern>/Question1</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_1">
+        <servlet-name>Questions-Begin</servlet-name>
+        <url-pattern>/Questions-Begin</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_178">
-        <servlet-name>Question2</servlet-name>
-        <url-pattern>/Question2</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_4">
+        <servlet-name>Questions-question1</servlet-name>
+        <url-pattern>/Questions-question1</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_184">
-        <servlet-name>Question3</servlet-name>
-        <url-pattern>/Question3</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_6">
+        <servlet-name>Questions-question2</servlet-name>
+        <url-pattern>/Questions-question2</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_190">
-        <servlet-name>validationCopy</servlet-name>
-        <url-pattern>/validationCopy</url-pattern>
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_8">
+        <servlet-name>Questions-question3</servlet-name>
+        <url-pattern>/Questions-question3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_10">
+        <servlet-name>Questions-question4</servlet-name>
+        <url-pattern>/Questions-question4</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_52">
+        <servlet-name>Questions-exit</servlet-name>
+        <url-pattern>/Questions-exit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="AdminVariableInfo-servletmapping">
+        <servlet-name>AdminVariableInfo</servlet-name>
+        <url-pattern>/AdminVariableInfo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_92">
+        <servlet-name>Questions-Review</servlet-name>
+        <url-pattern>/Questions-Review</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_104">
+        <servlet-name>Questions-Rating</servlet-name>
+        <url-pattern>/Questions-Rating</url-pattern>
     </servlet-mapping>
     
     

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Pagelet>
+    <DataPagelet>
+        <PageletHeader>
+            <PageletName>CallSurvey</PageletName>
+            <PageletDescription>CallSurvey</PageletDescription>
+            <PageletVersion>1.0</PageletVersion>
+        </PageletHeader>
+        <PageletBody>
+            <PageletFields>
+                <PageletField>
+                    <FieldOrderID>999</FieldOrderID>
+                    <FieldName>cdrstorage:messagesize</FieldName>
+                    <FieldDisplayName/>
+                    <FieldType>Integer</FieldType>
+                    <FieldValidation>
+                        <IntegerMinMaxValidation>
+                            <Min>-2147483648</Min>
+                            <Max>2147483647</Max>
+                        </IntegerMinMaxValidation>
+                    </FieldValidation>
+                    <FieldDefaultValue>0</FieldDefaultValue>
+                    <IsFieldTemplatable>true</IsFieldTemplatable>
+                    <IsFieldMandatory>false</IsFieldMandatory>
+                    <FieldDescription>number of characters of sms message to save to cdr</FieldDescription>
+                    <FieldAccessLevel>1</FieldAccessLevel>
+                    <FieldScope>Local</FieldScope>
+                </PageletField>
+                <PageletField>
+                    <FieldOrderID>999</FieldOrderID>
+                    <FieldName>cdrstorage:subjectsize</FieldName>
+                    <FieldDisplayName/>
+                    <FieldType>Integer</FieldType>
+                    <FieldValidation>
+                        <IntegerMinMaxValidation>
+                            <Min>-2147483648</Min>
+                            <Max>2147483647</Max>
+                        </IntegerMinMaxValidation>
+                    </FieldValidation>
+                    <FieldDefaultValue>0</FieldDefaultValue>
+                    <IsFieldTemplatable>true</IsFieldTemplatable>
+                    <IsFieldMandatory>false</IsFieldMandatory>
+                    <FieldDescription>number of characters of email subject to save to cdr</FieldDescription>
+                    <FieldAccessLevel>1</FieldAccessLevel>
+                    <FieldScope>Local</FieldScope>
+                </PageletField>
+                <PageletField>
+                    <FieldOrderID>999</FieldOrderID>
+                    <FieldName>notificationappname</FieldName>
+                    <FieldDisplayName/>
+                    <FieldType>String</FieldType>
+                    <FieldValidation>
+                        <StringValidation>
+                            <MinLength>0</MinLength>
+                            <MaxLength>2147483647</MaxLength>
+                        </StringValidation>
+                    </FieldValidation>
+                    <FieldDefaultValue/>
+                    <IsFieldTemplatable>true</IsFieldTemplatable>
+                    <IsFieldMandatory>false</IsFieldMandatory>
+                    <FieldDescription>Notification application name to send notification messages to</FieldDescription>
+                    <FieldAccessLevel>1</FieldAccessLevel>
+                    <FieldScope>Local</FieldScope>
+                </PageletField>
+            </PageletFields>
+        </PageletBody>
+    </DataPagelet>
+</Pagelet>

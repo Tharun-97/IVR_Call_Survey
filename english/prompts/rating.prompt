@@ -11,14 +11,13 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
                     <Properties>
-                        <Property name="Name" value="your rating is"/>
+                        <Property name="Name" value="The overall review rate is"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
                 <Segment class="com.avaya.sce.prompts.internal.segment.AudioVariable" type="AudioVariable">
                     <Properties>
-                        <Property name="Field" value="value2"/>
-                        <Property name="Valid" value="true"/>
+                        <Property name="Field" value="value4"/>
                         <Property name="format" value="number"/>
                         <Property name="Name" value="Rating"/>
                         <Property name="Number Type" value="integer"/>

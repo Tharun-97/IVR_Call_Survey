@@ -35,8 +35,8 @@
             <nestedpropertystore>
                 <propertystore id="notification" version="1.0">
                     <propertymap>
-                        <property name="cavenabled" value="false" version="1.0"/>
-                        <property name="notificationappnamecavenabled" value="false" version="1.0"/>
+                        <property name="cavenabled" value="true" version="1.0"/>
+                        <property name="notificationappnamecavenabled" value="true" version="1.0"/>
                     </propertymap>
                     <nestedpropertystore/>
                 </propertystore>
@@ -77,6 +77,27 @@
                 <propertystore id="tomcat" version="1.0">
                     <propertymap>
                         <property name="version" value="tomcatv9" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="pluggableconnectors" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="comavayavpadminVariables" version="1.0">
+                    <propertymap>
+                        <property name="displayName" value="AVP/AEP Configurable Application Variables" version="1.0"/>
+                        <property name="connectorId" value="com.avaya.vp.adminVariables" version="1.0"/>
+                        <property name="currentVersion" value="1" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="comavayascepdcnotification" version="1.0">
+                    <propertymap>
+                        <property name="displayName" value="Notification Connector (Email, SMS)" version="1.0"/>
+                        <property name="connectorId" value="com.avaya.sce.pdc.notification" version="1.0"/>
+                        <property name="currentVersion" value="2" version="1.0"/>
                     </propertymap>
                     <nestedpropertystore/>
                 </propertystore>

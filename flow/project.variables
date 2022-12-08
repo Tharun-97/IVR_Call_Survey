@@ -56,6 +56,30 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
+    <variable factoryID="com.avaya.vp.admin.variables.runtime.AdminVariableFactory" name="cdrstorage:messagesize" owner="com.avaya.sce.core" type="com.avaya.vp.adminComplexVar" value="0" version="1.0">
+        <editpolicies>
+            <policy name="valuesettable" value="true"/>
+            <policy name="opaque" value="false"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+        <property name="DefaltValue" value="0"/>
+        <property name="Description" value="number of characters of sms message to save to cdr"/>
+        <property name="VarType" value="Integer"/>
+    </variable>
+    <variable factoryID="com.avaya.vp.admin.variables.runtime.AdminVariableFactory" name="cdrstorage:subjectsize" owner="com.avaya.sce.core" type="com.avaya.vp.adminComplexVar" value="0" version="1.0">
+        <editpolicies>
+            <policy name="valuesettable" value="true"/>
+            <policy name="opaque" value="false"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+        <property name="DefaltValue" value="0"/>
+        <property name="Description" value="number of characters of email subject to save to cdr"/>
+        <property name="VarType" value="Integer"/>
+    </variable>
     <variable factoryID="" name="check:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
@@ -285,7 +309,19 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question1:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="message:user" owner="" type="" value="9942044110" version="1.0"/>
+    <variable factoryID="com.avaya.vp.admin.variables.runtime.AdminVariableFactory" name="notificationappname" owner="com.avaya.sce.core" type="com.avaya.vp.adminVar" value="0" version="1.0">
+        <editpolicies>
+            <policy name="valuesettable" value="true"/>
+            <policy name="opaque" value="false"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+        <property name="Description" value="Notification application name to send notification messages to"/>
+        <property name="VarType" value="String"/>
+    </variable>
+    <variable factoryID="" name="question1:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -293,7 +329,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question1:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question1:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -301,7 +337,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question1:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question1:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -309,7 +345,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question1:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question1:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -317,7 +353,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question1:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question1:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -325,7 +361,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question1:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question1:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -333,7 +369,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question1:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question1:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -341,7 +377,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question2:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question2:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -349,7 +385,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question2:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question2:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -357,7 +393,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question2:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question2:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -365,7 +401,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question2:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question2:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -373,7 +409,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question2:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question2:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -381,7 +417,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question2:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question2:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -389,7 +425,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question2:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question2:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -397,7 +433,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question3:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question3:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -405,7 +441,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question3:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question3:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -413,7 +449,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question3:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question3:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -421,7 +457,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question3:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question3:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -429,7 +465,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question3:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question3:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -437,7 +473,7 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question3:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question3:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -445,7 +481,63 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="Question3:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
+    <variable factoryID="" name="question3:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="question4:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="question4:inputmode" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="question4:interpretation" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="question4:noinputcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="question4:nomatchcount" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="question4:utterance" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
+        <editpolicies>
+            <policy name="opaque" value="true"/>
+            <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
+            <policy name="renameable" value="false"/>
+        </editpolicies>
+    </variable>
+    <variable factoryID="" name="question4:value" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
             <policy name="appendable" value="false"/>
@@ -455,6 +547,9 @@
     </variable>
     <variable factoryID="" name="Rating:value1" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="Rating:value2" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="Rating:value3" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="Rating:value4" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="Rating:value5" owner="" type="" value="4" version="1.0"/>
     <variable factoryID="" name="redirectinfo:presentationinfo" owner="com.avaya.sce.core" type="com.avaya.sce.core.redirect" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>
@@ -925,4 +1020,5 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
+    <variable factoryID="" name="untitled:untitled" owner="" type="" value="Welcome to TeleApps" version="1.0"/>
 </projectvariables>

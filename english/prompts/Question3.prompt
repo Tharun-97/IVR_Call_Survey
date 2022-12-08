@@ -9,15 +9,10 @@
                 <Property name="BargeIn" value="true"/>
             </Properties>
             <ChildItems>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Name" value="how was the food provided at the restaurant"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
-                    <Properties>
-                        <Property name="Name" value="Press 1 for good, Press 2 for average , press 3 for bad"/>
+                        <Property name="Phraseset" value="Audio"/>
+                        <Property name="Phrase" value="question3"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

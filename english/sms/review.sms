@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sms version="1">
+    <subject/>
+    <body>Thanks for your valuble review on the hotel. Looking forward for an another &#13;
+occasion of your visit to our hotel._{message:user}_</body>
+</sms>
