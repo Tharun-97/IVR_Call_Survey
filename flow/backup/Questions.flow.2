@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="112" package="flow.subflow.Questions" version="5.0">
+    <ApplicationFlow nextObjectId="113" package="flow.subflow.Questions" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="Name" value="Begin"/>
@@ -278,7 +278,17 @@
                                 <Property name="op2VarId" value="Rating"/>
                                 <Property name="destVarId" value="Rating"/>
                                 <Property name="destFieldId" value="value4"/>
-                                <Property name="type" value="modulus"/>
+                                <Property name="type" value="divide"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="113" version="1.2">
+                            <ItemProperties>
+                                <Property name="op1VarId" value="date"/>
+                                <Property name="op2VarId" value="time"/>
+                                <Property name="destVarId" value="untitled"/>
+                                <Property name="destFieldId" value="untitled"/>
+                                <Property name="type" value="setdatetime"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>

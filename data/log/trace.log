@@ -1,0 +1,274 @@
+15/12/2022 19:17:39:240  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : SCESession bound to HttpSession C06BBAB095268ABED53284E83C32997B
+15/12/2022 19:17:39:285  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Browser Version 2.1.4, terminationURL enabled : true
+15/12/2022 19:17:39:323  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Using SCESession C06BBAB095268ABED53284E83C32997B:/CallSurvey servlet : Start
+15/12/2022 19:17:39:366  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : ** Pushed Stack Frame [/CallSurvey]
+15/12/2022 19:17:39:382 DEBUG - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Creating variable [cdrstorage] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+15/12/2022 19:17:39:395 DEBUG - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Creating variable [notificationappname] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+15/12/2022 19:17:39:396 DEBUG - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Admin SimpleVariable:getSimpleVariable(): return admin simple variable - notificationappname
+15/12/2022 19:17:39:399 DEBUG - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Not able to save posted variable information [call_classification]
+15/12/2022 19:17:39:399  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Storing :session___sessionid to complex: session:sessionid  as [sess2213553]
+15/12/2022 19:17:39:400  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+15/12/2022 19:17:40:197 ERROR - C06BBAB095268ABED53284E83C32997B:/CallSurvey : session id:sess2213553 | Error processing request
+ EXCEPTION> 
+com.avaya.sce.runtimecommon.SCERuntimeException: Error generating Rootjava.lang.NullPointerException
+**** Root Cause 
+java.lang.NullPointerException
+	at com.avaya.sce.runtime.vxml.OutputGenerator.getNextUrl(OutputGenerator.java:150)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.linkBegin(OutputGenerator.java:530)
+	at com.avaya.sce.runtime.Link.generate(Link.java:70)
+	at com.avaya.sce.runtime.OutputGenerator.generateRoot(OutputGenerator.java:636)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.begin(OutputGenerator.java:345)
+	at com.avaya.sce.runtime.AppDocument.processRequest(AppDocument.java:305)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:140)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at com.avaya.sce.runtime.Entry.service(Entry.java:52)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+	at com.avaya.sce.runtimecommon.SCESession.throwRTException(SCESession.java:2617)
+	at com.avaya.sce.runtime.OutputGenerator.generateRoot(OutputGenerator.java:670)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.begin(OutputGenerator.java:345)
+	at com.avaya.sce.runtime.AppDocument.processRequest(AppDocument.java:305)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:140)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at com.avaya.sce.runtime.Entry.service(Entry.java:52)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.avaya.sce.runtime.vxml.OutputGenerator.getNextUrl(OutputGenerator.java:150)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.linkBegin(OutputGenerator.java:530)
+	at com.avaya.sce.runtime.Link.generate(Link.java:70)
+	at com.avaya.sce.runtime.OutputGenerator.generateRoot(OutputGenerator.java:636)
+	... 32 more
+
+15/12/2022 19:17:40:211  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : HTTP Session lost removing SCESession C06BBAB095268ABED53284E83C32997B
+15/12/2022 19:17:40:211  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : SCESession Removed
+15/12/2022 19:17:40:212 DEBUG - C06BBAB095268ABED53284E83C32997B:/CallSurvey : Removing 1 session stack frames.
+15/12/2022 19:17:40:212  INFO - C06BBAB095268ABED53284E83C32997B:/CallSurvey : ** Popped Stack Frame [/CallSurvey]
+15/12/2022 19:19:24:187  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : SCESession bound to HttpSession 958E9C53CEA7947B658AC5CC7798B851
+15/12/2022 19:19:24:188  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Browser Version 2.1.4, terminationURL enabled : true
+15/12/2022 19:19:24:191  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Using SCESession 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey servlet : Start
+15/12/2022 19:19:24:196  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : ** Pushed Stack Frame [/CallSurvey]
+15/12/2022 19:19:24:196 DEBUG - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Creating variable [cdrstorage] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+15/12/2022 19:19:24:197 DEBUG - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Creating variable [notificationappname] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+15/12/2022 19:19:24:198 DEBUG - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Admin SimpleVariable:getSimpleVariable(): return admin simple variable - notificationappname
+15/12/2022 19:19:24:198 DEBUG - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Not able to save posted variable information [call_classification]
+15/12/2022 19:19:24:198  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Storing :session___sessionid to complex: session:sessionid  as [sess8581442]
+15/12/2022 19:19:24:198  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+15/12/2022 19:19:24:912 ERROR - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : session id:sess8581442 | Error processing request
+ EXCEPTION> 
+com.avaya.sce.runtimecommon.SCERuntimeException: Error generating Rootjava.lang.NullPointerException
+**** Root Cause 
+java.lang.NullPointerException
+	at com.avaya.sce.runtime.vxml.OutputGenerator.getNextUrl(OutputGenerator.java:150)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.linkBegin(OutputGenerator.java:530)
+	at com.avaya.sce.runtime.Link.generate(Link.java:70)
+	at com.avaya.sce.runtime.OutputGenerator.generateRoot(OutputGenerator.java:636)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.begin(OutputGenerator.java:345)
+	at com.avaya.sce.runtime.AppDocument.processRequest(AppDocument.java:305)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:140)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at com.avaya.sce.runtime.Entry.service(Entry.java:52)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+	at com.avaya.sce.runtimecommon.SCESession.throwRTException(SCESession.java:2617)
+	at com.avaya.sce.runtime.OutputGenerator.generateRoot(OutputGenerator.java:670)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.begin(OutputGenerator.java:345)
+	at com.avaya.sce.runtime.AppDocument.processRequest(AppDocument.java:305)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:140)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at com.avaya.sce.runtime.Entry.service(Entry.java:52)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.avaya.sce.runtime.vxml.OutputGenerator.getNextUrl(OutputGenerator.java:150)
+	at com.avaya.sce.runtime.vxml.OutputGenerator.linkBegin(OutputGenerator.java:530)
+	at com.avaya.sce.runtime.Link.generate(Link.java:70)
+	at com.avaya.sce.runtime.OutputGenerator.generateRoot(OutputGenerator.java:636)
+	... 32 more
+
+15/12/2022 19:19:24:916  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : HTTP Session lost removing SCESession 958E9C53CEA7947B658AC5CC7798B851
+15/12/2022 19:19:24:916  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : SCESession Removed
+15/12/2022 19:19:24:917 DEBUG - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : Removing 1 session stack frames.
+15/12/2022 19:19:24:917  INFO - 958E9C53CEA7947B658AC5CC7798B851:/CallSurvey : ** Popped Stack Frame [/CallSurvey]
+15/12/2022 19:19:59:831  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : SCESession bound to HttpSession C9E8E5602036E5D951B423D7EEFDC89F
+15/12/2022 19:19:59:849  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Browser Version 2.1.4, terminationURL enabled : true
+15/12/2022 19:19:59:861  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Using SCESession C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey servlet : Start
+15/12/2022 19:19:59:911  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : ** Pushed Stack Frame [/CallSurvey]
+15/12/2022 19:19:59:924 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Creating variable [cdrstorage] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+15/12/2022 19:19:59:932 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Creating variable [notificationappname] from factory [com.avaya.vp.admin.variables.runtime.AdminVariableFactory]
+15/12/2022 19:19:59:933 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Admin SimpleVariable:getSimpleVariable(): return admin simple variable - notificationappname
+15/12/2022 19:19:59:935 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Not able to save posted variable information [call_classification]
+15/12/2022 19:19:59:936  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___sessionid to complex: session:sessionid  as [sess6585993]
+15/12/2022 19:19:59:936  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___vpconverseondata to complex: session:vpconverseondata  as []
+15/12/2022 19:20:00:600  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : runtime_platform : Desktop
+15/12/2022 19:20:00:600  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : runtime_asr : Desktop Microsoft Speech SAPI
+15/12/2022 19:20:00:607 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Acquiring initial License
+15/12/2022 19:20:00:608  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Acquiring Desktop runtime license
+15/12/2022 19:20:00:608  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Runtime :true
+15/12/2022 19:20:00:609  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : IC :true
+15/12/2022 19:20:00:609  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : CTI :true
+15/12/2022 19:20:00:687 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Grace Period timer cleared
+15/12/2022 19:20:00:688 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : License refresh timer started
+15/12/2022 19:20:00:693  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : MessageType is speech
+15/12/2022 19:20:00:696 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Initializer:applicationStarted:Initializing admin variables...
+15/12/2022 19:20:00:696 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Initializer:applicationStarted:__VPVarAppDate is 1671112200696
+15/12/2022 19:20:00:697 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Initializer:applicationStarted:Timestamp is 12/15/22 19:20:00
+15/12/2022 19:20:00:697 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Initializer:applicationStarted:Appname is CallSurvey
+15/12/2022 19:20:00:698 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : AdminVarCache:init: Timestamp is different; Load parameters....
+15/12/2022 19:20:00:698 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : AdminVarCache:init: Module? false
+15/12/2022 19:20:00:699 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : AdminVarCache:init: loading simulation data...
+15/12/2022 19:20:00:706 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : AdminVarCache:init: no data comes back from proxy.
+15/12/2022 19:20:00:707 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : app params: {}
+15/12/2022 19:20:00:708 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : AdminVarCache:init: Finish loading.
+15/12/2022 19:20:00:849  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Using SCESession C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey servlet : welcome
+15/12/2022 19:20:00:851  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+15/12/2022 19:20:00:851  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as [undefined]
+15/12/2022 19:20:00:851  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :redirectinfo___reason to complex: redirectinfo:reason  as [unknown]
+15/12/2022 19:20:00:851  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as [undefined]
+15/12/2022 19:20:00:851  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+15/12/2022 19:20:00:851  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___aai to complex: session:aai  as []
+15/12/2022 19:20:00:852  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___ani to complex: session:ani  as [undefined]
+15/12/2022 19:20:00:852  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___calltag to complex: session:calltag  as [unknown]
+15/12/2022 19:20:00:852  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___channel to complex: session:channel  as [0]
+15/12/2022 19:20:00:852  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___conversefirst to complex: session:conversefirst  as [unknown]
+15/12/2022 19:20:00:853  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___conversesecond to complex: session:conversesecond  as [unknown]
+15/12/2022 19:20:00:853  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___dnis to complex: session:dnis  as [undefined]
+15/12/2022 19:20:00:853  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+15/12/2022 19:20:00:854  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___protocolname to complex: session:protocolname  as [pots]
+15/12/2022 19:20:00:854  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___protocolversion to complex: session:protocolversion  as [1]
+15/12/2022 19:20:00:854  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___sessionlabel to complex: session:sessionlabel  as [undefined]
+15/12/2022 19:20:00:854  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___sharedmode to complex: session:sharedmode  as [shared]
+15/12/2022 19:20:00:854  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___ucid to complex: session:ucid  as [undefined]
+15/12/2022 19:20:00:855  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___uui to complex: session:uui  as [unknown]
+15/12/2022 19:20:00:855  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+15/12/2022 19:20:00:855  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+15/12/2022 19:20:00:855  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+15/12/2022 19:20:00:855  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+15/12/2022 19:20:00:856  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+15/12/2022 19:20:00:856  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videofps to complex: session:videofps  as [unknown]
+15/12/2022 19:20:00:856  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+15/12/2022 19:20:00:856  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+15/12/2022 19:20:00:856  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+15/12/2022 19:20:00:857  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [unknown]
+15/12/2022 19:20:00:857  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as [unknown]
+15/12/2022 19:20:00:857  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as [unknown]
+15/12/2022 19:20:00:857  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :session___vprdnis to complex: session:vprdnis  as [unknown]
+15/12/2022 19:20:00:857  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+15/12/2022 19:20:00:858  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+15/12/2022 19:20:00:923  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : session id:sess6585993 | CallSurvey:welcome | Entered Welcome
+15/12/2022 19:20:00:990  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Using SCESession C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey servlet : Language_Selection
+15/12/2022 19:20:01:081  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : session id:sess6585993 | CallSurvey:Language_Selection | Entered Language node
+15/12/2022 19:20:06:619  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Using SCESession C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey servlet : hangup
+15/12/2022 19:20:06:683 ERROR - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : session id:sess6585993 | Hangup error event has Occoured
+15/12/2022 19:20:06:694  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Using SCESession C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey servlet : exit
+15/12/2022 19:20:06:777  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Removing session from AvayaSessionTermination Servlet
+15/12/2022 19:20:06:779  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+15/12/2022 19:20:06:784  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : HTTP Session lost removing SCESession C9E8E5602036E5D951B423D7EEFDC89F
+15/12/2022 19:20:06:785  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : SCESession Removed
+15/12/2022 19:20:06:785 DEBUG - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : Removing 1 session stack frames.
+15/12/2022 19:20:06:785  INFO - C9E8E5602036E5D951B423D7EEFDC89F:/CallSurvey : ** Popped Stack Frame [/CallSurvey]

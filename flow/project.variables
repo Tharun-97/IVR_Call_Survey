@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
+    <variable factoryID="" name="Audios:Language" owner="" type="" value="C:/Users/Admin/Downloads/language.wav" version="1.0"/>
+    <variable factoryID="" name="Audios:Welcome" owner="" type="" value="C:/Users/Admin/Downloads/welcome.wav" version="1.0"/>
     <variable factoryID="" name="Booking_ID:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>
@@ -1020,5 +1022,4 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="untitled:untitled" owner="" type="" value="Welcome to TeleApps" version="1.0"/>
 </projectvariables>

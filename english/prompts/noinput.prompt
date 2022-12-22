@@ -18,5 +18,22 @@
                 </Segment>
             </ChildItems>
         </PromptLevel>
+        <PromptLevel count="3" valid="true">
+            <Properties>
+                <Property name="Timeout_Presentation" value="constant"/>
+                <Property name="Timeout" value="8"/>
+                <Property name="TimeUnit" value="seconds"/>
+                <Property name="BargeIn" value="true"/>
+            </Properties>
+            <ChildItems>
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                    <Properties>
+                        <Property name="Phraseset" value="Audio"/>
+                        <Property name="Phrase" value="MaxLimit"/>
+                    </Properties>
+                    <ChildItems/>
+                </Segment>
+            </ChildItems>
+        </PromptLevel>
     </Prompt>
 </PromptDoc>

@@ -12,7 +12,7 @@
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
                         <Property name="Phraseset" value="Audio"/>
-                        <Property name="Phrase" value="welcome"/>
+                        <Property name="Phrase" value="Welcome"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

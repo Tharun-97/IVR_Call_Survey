@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <phraseset audiolocation="internal" filename="Audio" version="1.0">
     <phrase version="1.0">
-        <displayname>lang</displayname>
-        <talent/>
-        <phrasetext/>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>language.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>bookingId</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>Please enter your Booking ID</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -21,7 +12,7 @@
     <phrase version="1.0">
         <displayname>noinput</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>No input is provided</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -30,7 +21,7 @@
     <phrase version="1.0">
         <displayname>noMatch</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>Input provided is incorrect</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -39,7 +30,7 @@
     <phrase version="1.0">
         <displayname>question1</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>How was your experience at the check-in process of the hotel?</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -48,7 +39,7 @@
     <phrase version="1.0">
         <displayname>question2</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>How clean was the room at the time of your arrival?</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -57,7 +48,7 @@
     <phrase version="1.0">
         <displayname>question3</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>How was the food provided at the restaurant?</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -66,19 +57,73 @@
     <phrase version="1.0">
         <displayname>question4</displayname>
         <talent/>
-        <phrasetext/>
+        <phrasetext>Overall how was your experience in staying in this hotel?</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
         <audiofile>Question4.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>welcome</displayname>
+        <displayname>MaxLimit</displayname>
+        <talent/>
+        <phrasetext>Exceeded maximum input limit</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>MaxLimit.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Lang</displayname>
+        <talent/>
+        <phrasetext>Press 1 for English,  Press 2 for Tamil</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>language.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Tharun</displayname>
         <talent/>
         <phrasetext/>
         <basetext/>
         <searchkeywords/>
         <comments/>
-        <audiofile>welcome.wav</audiofile>
+        <audiofile>Tharun.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Susee</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Susee.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Invalid</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Invalid.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>chooseValid</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>chooseValid.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Welcome</displayname>
+        <talent/>
+        <phrasetext>Welcome to Booking.com</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>welcome.au</audiofile>
     </phrase>
 </phraseset>

@@ -9,19 +9,10 @@
                 <Property name="BargeIn" value="true"/>
             </Properties>
             <ChildItems>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Name" value="hi susee"/>
-                    </Properties>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.ItemSeparator" type="ItemSeparator">
-                    <Properties/>
-                    <ChildItems/>
-                </Segment>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
-                    <Properties>
-                        <Property name="Name" value="PLEASE ENTER YOUR RATING ON OUR HOTEL BY ANSWERING THE FOLLOWING QUESTIONS"/>
+                        <Property name="Phraseset" value="Audio"/>
+                        <Property name="Phrase" value="Susee"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

@@ -59,7 +59,7 @@
             <nestedpropertystore>
                 <propertystore id="scert" version="1.0">
                     <propertymap>
-                        <property name="version" value="08.11.08.01" version="1.0"/>
+                        <property name="version" value="08.11.07.01" version="1.0"/>
                     </propertymap>
                     <nestedpropertystore/>
                 </propertystore>
@@ -70,7 +70,7 @@
             <nestedpropertystore>
                 <propertystore id="scert" version="1.0">
                     <propertymap>
-                        <property name="version" value="08.11.08.01" version="1.0"/>
+                        <property name="version" value="08.11.07.01" version="1.0"/>
                     </propertymap>
                     <nestedpropertystore/>
                 </propertystore>

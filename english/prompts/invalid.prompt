@@ -9,9 +9,10 @@
                 <Property name="BargeIn" value="true"/>
             </Properties>
             <ChildItems>
-                <Segment class="com.avaya.sce.prompts.internal.segment.TTS" type="TTS">
+                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Name" value="you have provided invalid details"/>
+                        <Property name="Phraseset" value="Audio"/>
+                        <Property name="Phrase" value="Invalid"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>
