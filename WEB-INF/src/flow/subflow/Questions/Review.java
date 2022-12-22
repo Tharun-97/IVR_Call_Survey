@@ -44,9 +44,9 @@ public class Review extends com.avaya.sce.runtime.Data {
 			Properties p = new Properties();
 			p.load(f);
 			
-			String url=p.getProperty("datasource.url");
-			String username=p.getProperty("datasource.username");
-			String password=p.getProperty("datasource.password");
+			String url=p.getProperty("url"); 
+			String username=p.getProperty("username");
+			String password=p.getProperty("password");
 			
 			Connection con = null;
 			
