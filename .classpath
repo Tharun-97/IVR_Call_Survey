@@ -2,16 +2,16 @@
 <classpath>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="WEB-INF/src"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/log4j-web-2.17.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/adminvar-rt-08.11.07.01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/notification-08.11.07.01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/scert-08.11.07.01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/scertcommon-08.11.07.01.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/log4j-web-2.17.1.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/scert-08.11.07.01.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/adminvar-rt-08.11.07.01.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/notification-08.11.07.01.jar"/>
-	<classpathentry kind="lib" path="D:/AOD_8_1_1/AOD-8.1.1/apache-tomcat-9.0.39/lib/scertcommon-08.11.07.01.jar"/>
-	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/sqljdbc42.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

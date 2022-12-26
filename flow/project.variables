@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
+    <variable factoryID="" name="Answers:answer1" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="Answers:answer2" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="Answers:answer3" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="Answers:answer4" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="Audios:Language" owner="" type="" value="C:/Users/Admin/Downloads/language.wav" version="1.0"/>
     <variable factoryID="" name="Audios:Welcome" owner="" type="" value="C:/Users/Admin/Downloads/welcome.wav" version="1.0"/>
     <variable factoryID="" name="Booking_ID:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.field" value="" version="1.0">
@@ -138,6 +142,9 @@
             <policy name="renameable" value="false"/>
         </editpolicies>
     </variable>
+    <variable factoryID="" name="choice:average" owner="" type="" value="2" version="1.0"/>
+    <variable factoryID="" name="choice:bad" owner="" type="" value="3" version="1.0"/>
+    <variable factoryID="" name="choice:good" owner="" type="" value="1" version="1.0"/>
     <variable factoryID="" name="date:audio" owner="com.avaya.sce.core" type="com.avaya.sce.core.date" value="" version="1.0">
         <editpolicies>
             <policy name="valuesettable" value="false"/>

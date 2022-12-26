@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="25" package="flow.subflow.DataAssign" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="Name" value="Begin"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="4"/>
+                                <Property name="Name" value="Start"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="141"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="42"/>
+                <Property name="Name" value="DataAssign"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="5" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="6" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="15" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="="/>
+                                <Property name="LeftOperandID" value="question1"/>
+                                <Property name="RightVarOperandFieldID" value="good"/>
+                                <Property name="LeftOperandFieldID" value="value"/>
+                                <Property name="RightVarOperandID" value="choice"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="17" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="destVarId" value="Answers"/>
+                                        <Property name="destFieldId" value="answer1"/>
+                                        <Property name="type" value="assign"/>
+                                        <Property name="sourceConstant" value="Good"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseIfCondition" id="18" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="="/>
+                                <Property name="LeftOperandID" value="question1"/>
+                                <Property name="RightVarOperandFieldID" value="average"/>
+                                <Property name="LeftOperandFieldID" value="value"/>
+                                <Property name="RightVarOperandID" value="choice"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="19" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="destVarId" value="Answers"/>
+                                        <Property name="destFieldId" value="answer1"/>
+                                        <Property name="type" value="assign"/>
+                                        <Property name="sourceConstant" value="Average"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseIfCondition" id="20" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="="/>
+                                <Property name="LeftOperandID" value="question1"/>
+                                <Property name="RightVarOperandFieldID" value="bad"/>
+                                <Property name="LeftOperandFieldID" value="value"/>
+                                <Property name="RightVarOperandID" value="choice"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="21" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="destVarId" value="Answers"/>
+                                        <Property name="destFieldId" value="answer1"/>
+                                        <Property name="type" value="assign"/>
+                                        <Property name="sourceConstant" value="Bad"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="7" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="24"/>
+                                <Property name="Name" value="Default"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="24" version="3.1">
+                <Property name="FlowNodeEditPart.WidgetX" value="325"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="34"/>
+                <Property name="Name" value="exit1"/>
+            </FlowNode>
+            <NodeConnection id="9" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="4"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="4"/>
+            </NodeConnection>
+            <NodeConnection id="25" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="24"/>
+                <Property name="Connection.SourceObjectID" value="7"/>
+                <Property name="Connection.TargetObjectID" value="24"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>

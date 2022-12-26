@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="404" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="408" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="64" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="193"/>
@@ -37,7 +37,7 @@
                 <Property name="Name" value="AppRoot"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.AppRoot" id="2" version="1.2">
                     <ItemProperties>
-                        <Property name="StartNodeID" value="379"/>
+                        <Property name="StartNodeID" value="27"/>
                     </ItemProperties>
                     <ChildItems>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.FlushPromptQueue" id="359" version="1.2">
@@ -574,33 +574,6 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="379" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="183"/>
-                <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="-1"/>
-                <Property name="Name" value="Welcome"/>
-                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="380" version="1.2">
-                    <ItemProperties/>
-                    <ChildItems>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="381" version="1.2">
-                            <ItemProperties>
-                                <Property name="Name" value="Welcome"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.FlushPromptQueue" id="404" version="1.2">
-                            <ItemProperties/>
-                            <ChildItems/>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="382" version="1.2">
-                            <ItemProperties>
-                                <Property name="LinkedNodeID" value="27"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
-                    </ChildItems>
-                </FlowItem>
-            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="94" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="191"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
@@ -835,18 +808,12 @@
                 <Property name="Connection.SourceObjectID" value="391"/>
                 <Property name="Connection.TargetObjectID" value="392"/>
             </NodeConnection>
-            <NodeConnection id="402" version="1.2">
+            <NodeConnection id="408" version="1.2">
                 <SourceNode id="1"/>
-                <TargetNode id="379"/>
-                <Property name="Connection.SourceObjectID" value="2"/>
-                <Property name="Connection.TargetObjectID" value="379"/>
-                <Bendpoint x="-4" y="13"/>
-            </NodeConnection>
-            <NodeConnection id="403" version="1.2">
-                <SourceNode id="379"/>
                 <TargetNode id="27"/>
-                <Property name="Connection.SourceObjectID" value="382"/>
+                <Property name="Connection.SourceObjectID" value="2"/>
                 <Property name="Connection.TargetObjectID" value="27"/>
+                <Bendpoint x="265" y="-1"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes>

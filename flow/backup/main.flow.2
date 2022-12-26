@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="404" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="406" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="64" version="3.1">
                 <Property name="FlowNodeEditPart.WidgetX" value="193"/>
@@ -516,7 +516,7 @@
                             <ItemProperties>
                                 <Property name="ActivateDTMF" value="1"/>
                                 <Property name="LinkedNodeID" value="9"/>
-                                <Property name="Name" value="english"/>
+                                <Property name="Name" value="English"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -524,7 +524,7 @@
                             <ItemProperties>
                                 <Property name="ActivateDTMF" value="2"/>
                                 <Property name="LinkedNodeID" value="9"/>
-                                <Property name="Name" value="tamil"/>
+                                <Property name="Name" value="Tamil"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -575,9 +575,9 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="379" version="3.1">
-                <Property name="FlowNodeEditPart.WidgetX" value="179"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="183"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="10"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="-1"/>
                 <Property name="Name" value="Welcome"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="380" version="1.2">
                     <ItemProperties/>
@@ -835,18 +835,17 @@
                 <Property name="Connection.SourceObjectID" value="391"/>
                 <Property name="Connection.TargetObjectID" value="392"/>
             </NodeConnection>
-            <NodeConnection id="402" version="1.2">
-                <SourceNode id="1"/>
-                <TargetNode id="379"/>
-                <Property name="Connection.SourceObjectID" value="2"/>
-                <Property name="Connection.TargetObjectID" value="379"/>
-                <Bendpoint x="-4" y="13"/>
-            </NodeConnection>
             <NodeConnection id="403" version="1.2">
                 <SourceNode id="379"/>
                 <TargetNode id="27"/>
                 <Property name="Connection.SourceObjectID" value="382"/>
                 <Property name="Connection.TargetObjectID" value="27"/>
+            </NodeConnection>
+            <NodeConnection id="406" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="379"/>
+                <Property name="Connection.SourceObjectID" value="2"/>
+                <Property name="Connection.TargetObjectID" value="379"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes>

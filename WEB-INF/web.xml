@@ -229,10 +229,21 @@ Copyright 2004-2021 Avaya Inc.
     
     
     
-    <servlet id="SAGE-callflow-servlet_main_379">
-        <servlet-name>Welcome</servlet-name>
-        <servlet-class>flow.Welcome</servlet-class>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_Questions_141">
+        <servlet-name>Questions-UploadDB</servlet-name>
+        <servlet-class>flow.subflow.Questions.UploadDB</servlet-class>
     </servlet>
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -379,10 +390,21 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>error</servlet-name>
         <url-pattern>/error</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_379">
-        <servlet-name>Welcome</servlet-name>
-        <url-pattern>/Welcome</url-pattern>
+    
+    
+    
+    
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_141">
+        <servlet-name>Questions-UploadDB</servlet-name>
+        <url-pattern>/Questions-UploadDB</url-pattern>
     </servlet-mapping>
+    
+    
+    
+    
+    
     
     
     
