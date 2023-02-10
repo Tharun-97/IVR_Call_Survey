@@ -9,10 +9,11 @@
                 <Property name="BargeIn" value="true"/>
             </Properties>
             <ChildItems>
-                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                <Segment class="com.avaya.sce.prompts.internal.segment.PhraseVariable" type="PhraseVariable">
                     <Properties>
-                        <Property name="Phraseset" value="Audio"/>
-                        <Property name="Phrase" value="Tharun"/>
+                        <Property name="Field" value="username"/>
+                        <Property name="type" value="phraseName"/>
+                        <Property name="Name" value="user"/>
                     </Properties>
                     <ChildItems/>
                 </Segment>

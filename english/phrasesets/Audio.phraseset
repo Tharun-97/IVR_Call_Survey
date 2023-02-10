@@ -73,15 +73,6 @@
         <audiofile>MaxLimit.wav</audiofile>
     </phrase>
     <phrase version="1.0">
-        <displayname>Lang</displayname>
-        <talent/>
-        <phrasetext>Press 1 for English,  Press 2 for Tamil</phrasetext>
-        <basetext/>
-        <searchkeywords/>
-        <comments/>
-        <audiofile>language.wav</audiofile>
-    </phrase>
-    <phrase version="1.0">
         <displayname>Tharun</displayname>
         <talent/>
         <phrasetext/>
@@ -125,5 +116,33 @@
         <searchkeywords/>
         <comments/>
         <audiofile>welcome.au</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Lang</displayname>
+        <talent/>
+        <phrasetext>Press 1 for English,  Press 2 for Tamil ,  Press 0 to Exit</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>language.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>verify</displayname>
+        <talent/>
+        <phrasetext>Your Booking id is</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>verify.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>Thanks</displayname>
+        <talent/>
+        <phrasetext>Thanks for your valuable feedback&#13;
+</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>Thanks.wav</audiofile>
     </phrase>
 </phraseset>

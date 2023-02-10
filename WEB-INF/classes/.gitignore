@@ -1,4 +1,9 @@
-/beans/
-/connectivity/
+/BookingDetails.class
+/ConnectionPooling.class
+/Option.class
+/Question.class
+/Response.class
+/Survey.class
 /english/
 /flow/
+/org/

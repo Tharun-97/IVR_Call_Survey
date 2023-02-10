@@ -8,6 +8,9 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/notification-08.11.07.01.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/scert-08.11.07.01.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/scertcommon-08.11.07.01.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/commons-pool2-2.6.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-dbcp2-2.4.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-logging-1.2.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>

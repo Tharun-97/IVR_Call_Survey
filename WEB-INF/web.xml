@@ -120,13 +120,10 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>verify</servlet-name>
         <servlet-class>flow.verify</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_49">
-        <servlet-name>validation</servlet-name>
-        <servlet-class>flow.validation</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_64">
-        <servlet-name>tharun</servlet-name>
-        <servlet-class>flow.tharun</servlet-class>
+        <servlet-name>welcome_user</servlet-name>
+        <servlet-class>flow.welcome_user</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_69">
         <servlet-name>exit</servlet-name>
@@ -137,10 +134,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.InvalidDetails</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_main_94">
-        <servlet-name>susee</servlet-name>
-        <servlet-class>flow.susee</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_main_99">
         <servlet-name>check</servlet-name>
         <servlet-class>flow.check</servlet-class>
@@ -197,13 +191,10 @@ Copyright 2004-2021 Avaya Inc.
         <load-on-startup>1</load-on-startup>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_Questions_92">
-        <servlet-name>Questions-Review</servlet-name>
-        <servlet-class>flow.subflow.Questions.Review</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_Questions_104">
-        <servlet-name>Questions-Rating</servlet-name>
-        <servlet-class>flow.subflow.Questions.Rating</servlet-class>
+        <servlet-name>Questions-thanks</servlet-name>
+        <servlet-class>flow.subflow.Questions.thanks</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_291">
         <servlet-name>transfer</servlet-name>
@@ -244,6 +235,24 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-class>flow.subflow.Questions.UploadDB</servlet-class>
     </servlet>
     
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_424">
+        <servlet-name>Greetings</servlet-name>
+        <servlet-class>flow.Greetings</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_431">
+        <servlet-name>valid</servlet-name>
+        <servlet-class>flow.valid</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_445">
+        <servlet-name>disconnect</servlet-name>
+        <servlet-class>flow.disconnect</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_454">
+        <servlet-name>Call_History</servlet-name>
+        <servlet-class>flow.Call_History</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -291,13 +300,10 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>verify</servlet-name>
         <url-pattern>/verify</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_49">
-        <servlet-name>validation</servlet-name>
-        <url-pattern>/validation</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_64">
-        <servlet-name>tharun</servlet-name>
-        <url-pattern>/tharun</url-pattern>
+        <servlet-name>welcome_user</servlet-name>
+        <url-pattern>/welcome_user</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_69">
         <servlet-name>exit</servlet-name>
@@ -307,10 +313,7 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>InvalidDetails</servlet-name>
         <url-pattern>/InvalidDetails</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_94">
-        <servlet-name>susee</servlet-name>
-        <url-pattern>/susee</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_99">
         <servlet-name>check</servlet-name>
         <url-pattern>/check</url-pattern>
@@ -362,13 +365,10 @@ Copyright 2004-2021 Avaya Inc.
         <url-pattern>/AdminVariableInfo</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_Questions_92">
-        <servlet-name>Questions-Review</servlet-name>
-        <url-pattern>/Questions-Review</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_Questions_104">
-        <servlet-name>Questions-Rating</servlet-name>
-        <url-pattern>/Questions-Rating</url-pattern>
+        <servlet-name>Questions-thanks</servlet-name>
+        <url-pattern>/Questions-thanks</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_291">
         <servlet-name>transfer</servlet-name>
@@ -400,6 +400,23 @@ Copyright 2004-2021 Avaya Inc.
         <servlet-name>Questions-UploadDB</servlet-name>
         <url-pattern>/Questions-UploadDB</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_424">
+        <servlet-name>Greetings</servlet-name>
+        <url-pattern>/Greetings</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_431">
+        <servlet-name>valid</servlet-name>
+        <url-pattern>/valid</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_445">
+        <servlet-name>disconnect</servlet-name>
+        <url-pattern>/disconnect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_454">
+        <servlet-name>Call_History</servlet-name>
+        <url-pattern>/Call_History</url-pattern>
+    </servlet-mapping>
+    
     
     
     
